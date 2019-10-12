@@ -62,12 +62,16 @@
 .main-img {
   width: 100%;
   height: 658px;
+  position: relative;
+  overflow: hidden;
 }
 
 .main-img-container {
   display: flex;
   width: 400%;
   position: relative;
+  left: 0;
+  transition: 0.45s;
 }
 
 .main-img-content {
@@ -80,10 +84,10 @@
 .main-img-item {
   width: 82.9787234%;
   height: 658px;
-  position: relative;
   background: url('../img/slide.jpg') no-repeat center;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .apartment-item_add {
@@ -109,7 +113,8 @@
 .main-img-item_content {
   display: flex;
   margin-bottom: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .main-img-item-info {
@@ -126,9 +131,123 @@
   position: relative;
 }
 
-.fa-chevron-down {
+.fa-chevron-down-1 {
   position: absolute;
   top: 18px;
   font-size: 12px;
   left: 240px;
+}
+
+.main-img-item-button {
+  color: #fff;
+  background-color: #CEA262;
+  padding: 21px 18px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'CeraPro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-img-item-button:hover {
+  cursor: pointer;
+}
+
+.main-img-content-move {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  transition: 0.6s;
+}
+
+.main-img-content-move:hover {
+  -webkit-box-shadow: 0px 7px 9px 0px rgba(255, 30, 0, 0.75);
+  -moz-box-shadow:    0px 7px 9px 0px rgba(255, 30, 0, 0.75);
+  box-shadow:         0px 7px 9px 0px rgba(255, 30, 0, 0.75);
+}
+
+.main-img-content-left {
+  left: 0;
+  top: 0;
+}
+
+.main-img-content-right {
+  right: 0;
+  top: 0;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1410px) {
+  .main-content {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1340px) {
+  .main-img-item_content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-img-item-info,
+  .main-img-item-button {
+    margin: 10px 25px;
+  }
+
+  .main-img-item-info {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1290px) {
+  .main-img-content-move {
+    width: 80px;
+    height: 100%;
+  }
+
+  .main-img-item {
+    width: 88%;
+  }
+
+  .apartment-item_add {
+    right :50px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 720px) {
+  .main-img {
+    height: 500px;
+  }
+
+  .main-img-item_content {
+    margin-bottom: 160px;
+  }
+
+  .main-img-content-move {
+    width: 60px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 720px) {
+  .main-img {
+    height: 450px;
+  }
+
+  .main-img-item_content {
+    margin-bottom: 220px;
+  }
+
+  .main-img-content-move {
+    width: 40px;
+  }
+
+  .main-img-description {
+    font-size: 26px;
+  }
 }
