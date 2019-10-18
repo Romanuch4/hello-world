@@ -344,6 +344,90 @@
           </section>
         </section>
       </article>
+
+      <article class="main-filter">
+        <h2 class="main-filter-title">
+          Выбрать предложение:
+        </h2>
+
+        <section class="filter-forms">
+          <section class="filter-form">
+            <section class="filter-item">
+              <section class="filter-item_title">
+                Валюта:
+              </section>
+              <section class="filter-item-align">
+                <i class="fas fa-chevron-down fa-chevron-down-3"></i>
+                <section tabindex="0" id="currency-1" class="filter-currency currency-1">
+                  ₽
+                </section>
+                <section tabindex="0" id="currency-2" class="filter-currency currency-2">
+                  €
+                </section>
+                <section tabindex="0" id="currency-3" class="filter-currency currency-3 filter-currency_margin">
+                  $
+                </section>
+              </section>
+            </section>
+
+            <section class="filter-item">
+                <section class="filter-item_title">
+                    Площадь, м
+                </section>
+                <section class="filter-inputs">
+                  <input class="filter-input" type="number" min="1" max="5" value="1"/>
+                  <div class="filter-hr"></div>
+                  <input class="filter-input" type="number" min="1" max="5567" value="5567"/>
+                  <p class="filter-input_placeholder">
+                      от
+                    </p>
+                    <p class="filter-input_placeholder1">
+                      до
+                    </p>
+                </section>
+              </section>
+
+              <section class="filter-item">
+                  <section class="filter-item_title">
+                      Стоимость, ₽:
+                  </section>
+                  <section class="filter-inputs">
+                    <input class="filter-input" type="number" min="1" max="5" value="1"/>
+                    <div class="filter-hr"></div>
+                    <input class="filter-input" type="number" min="1" max="200000000" value="200000000"/>
+                    <p class="filter-input_placeholder">
+                        от
+                      </p>
+                      <p class="filter-input_placeholder1">
+                        до
+                      </p>
+                  </section>
+                </section>
+
+                <section class="filter-item filter-position">
+                  <section class="filter-item_title">
+                    Отделка
+                  </section>
+                  <select name="filter" class="filter-select">					
+                    <option value="1">Не важно</option>
+                    <option value="2">Важно</option>
+                    <option value="3">Очень важно</option>
+                  </select>
+                </section>
+
+                <section class="filter-item filter-margin2">
+                  <section class="filter-item_title">
+                    Этаж
+                  </section>
+                  <select name="filter" class="filter-select">					
+                    <option value="1"></option>
+                    <option value="2">Важно</option>
+                    <option value="3">Очень важно</option>
+                  </select>
+                </section>
+          </section>
+        </section>
+      </article>
     </article>
   </main>
     
@@ -540,6 +624,7 @@
 <script src="../js/pop-up.js"></script>
 <script src="../js/mobile-menu.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/currency.js"></script>
 <!--Иконки с fontawesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </body>

@@ -16,7 +16,7 @@
 
   moveRight.addEventListener('click', function() {
     if(counter == -300) {
-      counter = 0
+      counter = 0;
       container.style.left = counter + '%';
     } else {
       counter-=100;
