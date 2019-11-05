@@ -772,9 +772,8 @@
     left: -50px;
 }
 
-/*================= 5 screen ================*/
+/*================= 4 screen ================*/
 .description_object {
-    padding-top: 60px;
     background-color: #fff;
 }
 
@@ -789,6 +788,7 @@
     font-weight: 600;
     font-family: 'Roboto Slab', sans-serif;
     margin-bottom: 43px;
+    padding-top: 60px;
 }
 
 .description_object-content {
@@ -815,6 +815,20 @@
 
 .description_object-map {
     width: 100%;
+}
+
+.description_object-sub_title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #303030;
+    font-weight: 600;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.description_object-paragraph {
+    color: #303030;
+    line-height: 26px;
 }
 
 
@@ -886,6 +900,19 @@
         position: relative;
         right: 36px;
     }
+
+    .description_object {
+        padding: 0 10px;
+    }
+
+    .description_object-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .description_object-title {
+        text-align: center;
+    }
 }
 
 
@@ -915,6 +942,22 @@
     
     .characteristics-panel-hr-1 {
         width: 11%;
+    }
+
+    .characteristics-panel-hr-0 {
+        width: 35%;
+    }
+    
+    .characteristics-panel-hr-2 {
+        width: 30%;
+    }
+    
+    .characteristics-panel-hr-3 {
+        width: 32%;
+    }
+    
+    .characteristics-panel-hr-4 {
+        width: 21%;    
     }
 }
 
@@ -987,6 +1030,10 @@
     .characteristics-panel-ul {
         width: 500px;
     }
+
+    .description_object {
+        overflow: hidden;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -1040,12 +1087,6 @@
         bottom: 40px;
     }
 
-}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (max-width: 720px) {
     .main-img {
         height: 450px;
     }
@@ -1081,17 +1122,18 @@
     .advice-content {
         padding-bottom: 50px;
     }
-}
 
-/* Large Devices, Wide Screens */
-
-@media only screen and (max-width: 540px) {
-    .characteristics-panel-image {
-        width: 100%;
+    .description_object-content {
+        position: relative;
+        right: 50px;
     }
 
-    .characteristics-panel-button {
-        padding: 20px 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .description_object-content {
+        right: 20px;
     }
 
     .characteristics-panel-li {
@@ -1111,6 +1153,18 @@
     .characteristics-panel-name {
         display: inline-block;
         margin: 15px 0;
+    }
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 540px) {
+    .characteristics-panel-image {
+        width: 100%;
+    }
+
+    .characteristics-panel-button {
+        padding: 20px 30px;
     }
 }
 
