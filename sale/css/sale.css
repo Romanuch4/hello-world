@@ -1,5 +1,7 @@
 .main {
     background-color: #F7F7F7;
+    overflow: hidden;
+    padding-bottom: 80px;
 }
 
 .main-content {
@@ -775,6 +777,7 @@
 /*================= 4 screen ================*/
 .description_object {
     background-color: #fff;
+    padding-bottom: 68px;
 }
 
 .description_object-box {
@@ -830,6 +833,138 @@
     color: #303030;
     line-height: 26px;
 }
+
+/*================= 5 screen ================*/
+.callback {
+    padding-top: 75px;
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    max-height: 654px;
+    overflow-y: hidden;
+}
+
+.callback-img {
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+    margin-left: 26px;
+}
+
+.callback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 620px;
+    margin-left: -190px;
+}
+
+.callback-title {
+    font-size: 36px;
+    color: #303030;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.callback-title-span {
+    background-color: #F7F7F7;
+    padding: 0 54px;
+}
+
+.callback-inputs {
+    margin-top: 16px;
+}
+
+.callback-button {
+    padding-left: 60px;
+    padding-right: 60px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+    right: 13px;
+    margin-bottom: 30px;
+}
+
+.callback-link {
+    text-decoration: underline;
+}
+
+.callback-text {
+    width: 64%; 
+    padding-left: 42px;
+}
+
+.callback-border {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    border: 10px solid #fff;
+    height: 55.5%;
+    margin-top: 20px;
+}
+
+/*================= 6 screen ================*/
+.about {
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.about-title {
+    padding-top: 0;
+    margin-bottom: 14px;
+}
+
+.about-img {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    margin-right: 80px;
+    margin-bottom: 75px;
+}
+
+.about-sub_title {
+    font-size: 24px;
+    color: #303030;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    color: #323232;
+    font-size: 16px;
+    font-family: 'CeraPro', sans-serif;
+    max-width: 405px;
+    opacity: 0.8;
+    line-height: 26px;
+}
+
+.about-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
 
 
 /* Large Devices, Wide Screens */
@@ -911,6 +1046,53 @@
     }
 
     .description_object-title {
+        text-align: center;
+    }
+
+    .callback {
+        flex-direction: column;
+        align-items: center;
+        max-height: 100%;
+        padding-bottom: 30px;
+    }
+
+    .callback-form {
+        margin-left: 0;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .callback-img {
+        left: 70px;
+        margin-left: 50px;
+        width: 80%;
+        height: 695px;
+    }
+
+    .description_object-paragraph {
+        padding-bottom: 70px;
+    }
+
+    .callback-border {
+        widtH: 90%;
+        height: 80.5%;
+    }
+
+    .about-item:nth-child(3n) {
+        margin-right: 40px;
+    }
+
+    .about-item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .about-img {
+        width: 98%;
+        min-height: 250px;
+    }
+
+    .about-img-align {
         text-align: center;
     }
 }
@@ -1034,6 +1216,13 @@
     .description_object {
         overflow: hidden;
     }
+
+    .callback-img {
+        left: 50px;
+        margin-left: 50px;
+        width: 90%;
+        height: 695px;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -1056,6 +1245,12 @@
         left: 50%;
         top: 50%;
     }
+
+    .callback-img {
+        left: 30px;
+        width: 100%;
+        height: 695px;
+    }    
 }
 
 
@@ -1154,6 +1349,19 @@
         display: inline-block;
         margin: 15px 0;
     }
+
+    .callback-title {
+        font-size: 30px;
+        margin: 0 15px;
+    }
+
+    .callback-title-span {
+        padding: 0px;
+    }
+
+    .callback-img {
+        left: 0;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -1190,4 +1398,20 @@
     .advice-input {
         width: 250px;
     }
+
+    .callback-title {
+        position: relative;
+        right: 18px;
+    }
+
+    .callback-button {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .callback-form {
+        max-width: 100%;
+        margin-left: 30px;
+    }
+    
 }
