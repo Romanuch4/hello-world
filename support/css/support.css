@@ -140,6 +140,8 @@
   margin-right: 10px;
   font-size: 18px;
   font-family: 'CeraPro', sans-serif;
+  cursor: pointer;
+  transition: 0.6s;
 }
 
 .main-rooms-item-1 {
@@ -148,4 +150,8 @@
 
 .main-item-right {
   margin-right: 0;
+}
+
+.main-rooms-item-active {
+  background-color: #867DAD;
 }
