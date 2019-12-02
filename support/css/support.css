@@ -56,6 +56,7 @@
   margin: 0 auto;
   position: relative;
   padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .main-header {
@@ -65,8 +66,8 @@
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -235%);
-  background: #F5F7F5;
+  transform: translate(-50%, -350%);
+  background: rgb(245, 247, 245);
 }
 
 .main-title {
@@ -89,6 +90,7 @@
   width: 100%;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-item {
@@ -126,6 +128,11 @@
   width: 240px;
 }
 
+.input3 {
+  width: 100px;
+}
+
+
 .main-rooms {
   display: flex;
 }
@@ -140,8 +147,8 @@
   margin-right: 10px;
   font-size: 18px;
   font-family: 'CeraPro', sans-serif;
-  cursor: pointer;
   transition: 0.6s;
+  cursor: pointer;
 }
 
 .main-rooms-item-1 {
@@ -152,6 +159,196 @@
   margin-right: 0;
 }
 
-.main-rooms-item-active {
-  background-color: #867DAD;
+.main-item-1 {
+  position: relative;
+  top: 15px;
+}
+
+.main-repair {
+  display: flex;
+}
+
+.main-repair-item {
+  margin: 0 5px;
+  padding: 17px 20px;
+  font-size: 18px;
+  font-family: 'CeraPro', sans-serif;
+  border-radius: 6px;
+  background-color: #DFDFDF;
+  color: #2D2D2D;
+  transition: 0.6s;
+}
+
+.main-repair-item:hover {
+  cursor: pointer;
+}
+
+.main-replanning {
+  width: 480px;
+  border: none;
+  border-radius: 6px;
+  height: 50px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.main-replanning-1 {
+  width: 240px;
+}
+
+.main-window {
+  display: flex;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  padding: 24px 18px;
+}
+
+.main-label-window {
+  position: relative;
+  top: 14px;
+  left: 19px;
+}
+
+.main-window-item {
+  font-size: 16px;
+  color: #2F2F2F;
+  font-family: 'CeraPro', sans-serif;
+  margin-right: 30px;
+}
+
+.main-window-item-1 {
+  margin-right: 0;
+}
+
+.main-window-input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.main-window-checkbox {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Option */
+
+.option {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Check */
+
+.check {
+  padding-left: 1.6em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 0em;
+  margin-left: -1.6em;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border-radius: 0.2em;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+  background-color: #4A90E2;
+  background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
+}
+
+/* Focused */
+
+.check__input:focus + .check__box {
+  box-shadow: 0 0 0 0.1em #4A90E2;
+}
+
+.main-throw_off {
+  position: absolute;
+  bottom: -30px;
+  right: 16.9%;
+  cursor: pointer;
+}
+
+.main-estimate {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-button {
+  background-color: #fff;
+  color: #CB9F60;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'CeraPro', sans-serif;
+  border: 2px solid #CB9F60;
+  width: 330px;
+  height: 50px;
+  border-radius: 6px;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.main-button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #CB9F60;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.main-button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.main-button span:nth-child(1) {
+  --n: 1;
+}
+
+.main-button span:nth-child(2) {
+  --n: 2;
+}
+
+.main-button span:nth-child(3) {
+  --n: 3;
+}
+
+.main-button span:nth-child(4) {
+  --n: 4;
+}
+
+.main-button:hover {
+  cursor: pointer;
+  color: #fff;
 }

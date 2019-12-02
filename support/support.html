@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Все районы</title>
+  <title>Поддержка</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="" />
@@ -189,13 +189,13 @@
 
         <section class="main-item">
           <label class="main-label" for="address">
-            Введите адрес недвижимости:
+            Кол-во комнат:
           </label>
           <div class="main-rooms">
-            <div class="main-rooms-item">1</div>
-            <div class="main-rooms-item">2</div>
-            <div class="main-rooms-item">3</div>
-            <div class="main-rooms-item main-rooms-item-1">4+</div>
+            <div class="main-rooms-item" data-name="1">1</div>
+            <div class="main-rooms-item" data-name="2">2</div>
+            <div class="main-rooms-item" data-name="3">3</div>
+            <div class="main-rooms-item main-rooms-item-1" data-name="4">4+</div>
           </div>
         </section>
 
@@ -206,6 +206,127 @@
           <input name="address" id="address" class="main-input input2" type="text"/>
         </section>
 
+        <section class="main-item">
+          <label class="main-label" for="floor">
+            Этаж:
+          </label><br/>
+          <input name="floor" id="floor" class="main-input input3" type="text"/>
+        </section>
+
+        <section class="main-item">
+          <label class="main-label">
+            Ремонт:
+          </label><br/>
+          <section class="main-repair">
+            <div class="main-repair-item" data-name="1">Косметический</div>
+            <div class="main-repair-item" data-name="2">Евро</div>
+            <div class="main-repair-item" data-name="3">Дизайнерский</div>
+            <div class="main-repair-item" data-name="4">Без ремонта</div>
+          </section>
+        </section>
+
+        <section class="main-item main-item-right">
+          <label class="main-label" for="replanning">
+            Перепланировка:
+          </label><br/>
+          <select class="main-replanning" name="replanning" id="replanning">
+            <option value="1">Есть</option>
+            <option value="2">Нету</option>
+            <option value="3">Неважно</option>
+          </select>
+        </section>
+
+        <section class="main-item">
+          <label class="main-label main-label-window">
+            Окна выходят на:
+          </label><br/>
+          <ul class="main-window">
+            <li class="main-window-item">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="yard"/>
+                  <span class="check__box"></span>
+                  Во двор
+              </label>
+            </li>
+            <li class="main-window-item">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="street"/>
+                  <span class="check__box"></span>
+                  На улицу
+              </label>
+            </li>
+            <li class="main-window-item main-window-item-1">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="panoramic-view"/>
+                  <span class="check__box"></span>
+                  Панорамный вид
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-item">
+          <label class="main-label main-label-window">
+            Подъезд:
+          </label><br/>
+          <ul class="main-window">
+            <li class="main-window-item">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="yard"/>
+                  <span class="check__box"></span>
+                  Охрана
+              </label>
+            </li>
+            <li class="main-window-item main-window-item-1">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="street"/>
+                  <span class="check__box"></span>
+                  Консьерж
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-item">
+          <label class="main-label main-label-window">
+            Собственники:
+          </label><br/>
+          <ul class="main-window">
+            <li class="main-window-item">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="yard"/>
+                  <span class="check__box"></span>
+                  Дети
+              </label>
+            </li>
+            <li class="main-window-item main-window-item-1">
+              <label class="check">
+                  <input class="check__input" type="checkbox" name="street"/>
+                  <span class="check__box"></span>
+                  > 60 лет
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-item main-item-1 main-item-right">
+          <label class="main-label" for="replanning">
+            Срочность продажи:
+          </label><br/>
+          <select class="main-replanning main-replanning-1" name="replanning" id="replanning">
+            <option value="1">Есть</option>
+            <option value="2">Нету</option>
+            <option value="3">Неважно</option>
+          </select>
+        </section>
+        
+        <img class="main-throw_off" src="icons/throw_off.png" alt="throw off"/>
+        <div class="main-estimate">
+          <button class="main-button">
+            Оценить
+            <span></span><span></span><span></span><span></span>
+          </button>
+        </div>
       </section>
     </section>
   </main>
