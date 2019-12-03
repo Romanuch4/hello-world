@@ -20,12 +20,18 @@
 /*Thanks to call*/
 (function() {
  let sendButton = document.querySelector('.call-submit'),
-    comeBack = document.querySelector('.thanks-comeback');
-    window.popUpThanks = document.querySelector('.call1');
-    sendButton.addEventListener('click', function (evt) {
+     input1 = document.querySelector('#name'),
+     input2 = document.querySelector('#number'),
+     comeBack = document.querySelector('.thanks-comeback');
+     window.popUpThanks = document.querySelector('.call1');
+     sendButton.addEventListener('click', function (evt) {
       evt.preventDefault();
-      window.popUp.style.display = 'none';
-      popUpThanks.style.display = 'flex';
+        if(input1.value == '' || input2.value == '') {
+          alert('Отправка невозможна(Введите нужные значения)');
+        } else {
+          window.popUp.style.display = 'none';
+          window.popUpThanks.style.display = 'flex';
+        }
     });
 
     comeBack.addEventListener('click', function () {
